@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  app:
+    image: oven/bun:latest
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./src:/home/bun/app
+    command: "bun run index.ts"
+
+  ghost:
+    image: ghost:4-alpine
+    ports:
+      - 8080:2368
+    environment:
+      # see https://ghost.org/docs/config/#configuration-options
+      database__connection__filename: /ghost_data/ghost.db
+      url: http://localhost:8080
+    volumes:
+      - ./data/ghost:/ghost_data

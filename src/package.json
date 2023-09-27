@@ -1,0 +1,20 @@
+{
+  "name": "ghost_whisper",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@pezzo/client": "^0.4.9",
+    "@tryghost/admin-api": "^1.13.8",
+    "axios": "^1.5.0",
+    "jsonwebtoken": "v8.5.1",
+    "marked": "^9.0.0",
+    "openai": "^4.6.0",
+    "telegraf": "^4.13.1"
+  }
+}
