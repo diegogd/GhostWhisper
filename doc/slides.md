@@ -2,25 +2,58 @@
 marp: true
 theme: default
 paginate: true
+style: |
+  section.center {
+    text-align: center
+  }
+  img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+  }
+  section.small {
+    font-size: 1.2em
+  }
+  section.change {
+    background-color: #eec
+  }
 ---
+<style>
+
+</style>
+
+<!-- _class: center -->
 
 <!-- _paginate: skip -->
 
+![bg right:33% vertical](./assets/back1.jpg)
+
 # Ghost Whisper
 
-A handy LLM use case
+### A handy LLM use case
+
+[https://github.com/diegogd/GhostWhisper](https://github.com/diegogd/GhostWhisper)
 
 <!-- footer: Affirm - UI Reading Club -->
 
----
-<!-- _backgroundColor: #eec -->
+<!-- This is a use case done during a weekend in order to test Pezzo.io (described) in the following slides.
 
-## Overview - Use case: 
-- A user creates articles in a blog by describing some brief ideas to a bot in Telegram
+The project is available and once the env variables are set it can be used.
+-->
+
+---
+
+![bg right:40% vertical](./assets/back2.jpg)
+
+# Overview - Use case: 
+
+> A user creates articles in a blog by describing some brief ideas to a bot in Telegram
 
 ---
 
 # Technology stack
+
+![bg left:33%](./assets/back3.jpg)
+
 
 - **node.js** application (bun)
   - **Telegraf**: library to interact with Telegram bots.
@@ -31,13 +64,6 @@ A handy LLM use case
 
 
 ---
-
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
 
 ![w:800 center](assets/diagram2.excalidraw.png)
 
@@ -50,6 +76,8 @@ Let the LLM implement the logic. Focus on designing and tuning the prompts.
 ![center ](assets/promptflow.excalidraw.png)
 
 ---
+
+![bg right:33% vertical](./assets/back4.jpg)
 
 # [Pezzo.ai](https://www.pezzo.ai) for prompt management
 
@@ -130,11 +158,6 @@ template: ![](https://source.unsplash.com/random/?city,night).
 ![w:490](image-16.png) ![w:400](image-11.png)
 
 ---
-<style>
-section.small {
-    font-size: 1.2em
-}
-</style>
 
 <!-- _class: small -->
 
@@ -146,7 +169,7 @@ Imaginen un mundo en el que las máquinas pueden reconocer imágenes, entender e
 
 ---
 
-<!-- _backgroundColor: #eec -->
+<!-- _class: change -->
 
 # Oh wait
 
@@ -217,6 +240,16 @@ Imaginen un mundo en el que las máquinas pueden reconocer imágenes, entender e
 
 ---
 
+## Tokenizer
+
+- 1K around 750 words
+- [Compare tokenizer per languague](https://huggingface.co/spaces/yenniejun/tokenizers-languages)
+---
+
+![h:650](image-2.png)
+
+---
+
 ## OpenAI - [API's usage cost](https://openai.com/pricing)
 
 - Whisper: transcribe text from audio
@@ -250,6 +283,6 @@ Steps:
 
 ---
 
-<!-- _backgroundColor: #eec -->
-
 # Demo time
+
+![bg right:70%](./assets/back5.jpg)
