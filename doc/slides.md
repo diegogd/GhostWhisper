@@ -33,7 +33,7 @@ style: |
 
 [https://github.com/diegogd/GhostWhisper](https://github.com/diegogd/GhostWhisper)
 
-<!-- footer: Affirm - UI Reading Club -->
+<!-- footer: Affirm - AI Reading Club -->
 
 <!-- This is a use case done during a weekend in order to test Pezzo.io (described) in the following slides.
 

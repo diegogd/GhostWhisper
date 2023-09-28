@@ -9,6 +9,12 @@ cd doc
 npx @marp-team/marp-cli@latest slides.md --pdf --allow-local-files
 ```
 
+To launch the slides in server mode:
+
+```sh
+PORT=8070 npx @marp-team/marp-cli@latest . -w -s
+```
+
 ## Develop
 
 To install the bun environment execute:
